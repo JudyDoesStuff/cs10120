@@ -108,6 +108,18 @@
         grid-column-end: 2;
         grid-row-start: 3;
     }
+    #button{
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        font-family: 'Abril Fatface', serif;
+        border: none;
+        background-color: #A4BBFFff;
+        color: #3C4693ff;
+    }
+    #button:hover{
+        background-color: #3C4693ff;
+        color: #A4BBFFff;
+    }
 
 
 
@@ -254,7 +266,7 @@
 <div id="locator">
     <div id="search">
         <input id="bar" type="text" placeholder="Search...">
-        <button>Submit</button>
+        <button id="button">Go</button>
     </div>
     <div id="filter">Filter</div>
 </div>
@@ -263,8 +275,7 @@
         <img class="image" src="images/fancyBear.jpg">
         <div class="top">
         <h2 class="title">Title</h2>
-        <i style='font-size:24px' class='fas'>&#xf46c;</i>
-        <i style='font-size:24px' class='fa'>&#xf2b9;</i>
+
         </div>
         <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
