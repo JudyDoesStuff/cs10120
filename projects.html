@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<style>
+.container {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: #ABA5FF;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+    }
+    .item-2{
+        display: flex;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        gap: 20px;
+        justify-self: center;
+        font-size: min(3vw, 120%);
+        font-family: 'Abril Fatface', serif;
+    }
+    .nav{
+        color: #3C4693ff;
+        text-decoration: none;
+    }
+    .nav:hover{
+        background-color: #3C4693ff;
+        color: #ABA5FF;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        border-radius: 10px;
+    }
+    .item-1{
+        visibility: collapse;
+        font-size: min(4vw, 150%);
+        font-family: 'Abril Fatface', serif;
+        color:#28497Aff;
+    }
+    #title{
+        display: grid;
+        font-family: 'Abril Fatface', serif;
+        color:#0C162Aff;
+        justify-self: center;
+        background-color: #A4BBFFff;
+        color: #28497Aff;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+    }
+    #locator{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: #7475D7ff;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+    }
+    #search{
+        grid-column-start: 1;
+        
+    }
+    #filter{
+        grid-column-start: 2;
+    }
+    #bar{
+        background-color: #A4BBFFff;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        border-style: none;
+        color: #0C162Aff;
+
+    }
+    #bar:focus{
+        outline: none;
+    }
+    .image{
+        object-fit: contain;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+        background-color: #578EE5ff;
+        
+    }
+    .image{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+
+    }
+    .top{
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        grid-row-start: 1;
+
+    }
+    .title{
+        grid-column-start: 1;
+        align-self: center;
+    }
+
+    .description{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+    }
+
+
+
+
+
+
+
+    #footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color:#ABA5FF;
+        border-radius: 25px;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+    #siteMap{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 1;
+        padding: 3vw;
+        font-size: 2vw;
+        color: #3C4693ff;
+
+    }
+    #social{
+        grid-column-start: 2;
+    }
+    #navf1{
+        grid-row-start: 2;
+        padding:1vw
+    }
+    #navf2{
+        grid-row-start: 3;
+        padding:1vw
+    }
+    #navf3{
+        grid-row-start: 4;
+        padding:1vw
+    }
+    #social{
+        display:grid;
+        font-size: 2vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 2;
+        padding: 3vw;
+        color: #3C4693ff;
+
+    }
+    #social1{
+        grid-row-start: 2;
+        padding:1vw;
+    }
+    #social2{
+        grid-row-start: 3;
+        padding:1vw;
+    }
+    #social3{
+        grid-row-start: 4;
+        padding:1vw;
+    }
+    .footE{
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: #3C4693ff;
+    }
+    .footE:hover{
+        color: #0C162Aff;
+    }
+
+    @media only screen and (min-width: 700px) {
+
+    .site{
+        margin:5vw;
+
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: 50% 50%;     
+    }
+    .item-1{
+        visibility: visible;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .image{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .top{
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+
+    }
+    .title{
+        grid-column-start: 1;
+        
+    }
+    .type{
+        grid-column-start: 2;
+       
+    }
+    .completion{
+        grid-column-start: 3;
+
+    }
+    .description{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+
+
+
+    }
+
+</style>
+<div class="site">
+<div class="container">
+    <div class="item item-1">Judy Helena Maisel</div>
+    <div class="item item-2">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="projects.html">Projects</a>
+        <a class="nav" href="cv.html">CV</a>
+        <a class="nav" href="#footer">Contact</a>
+    </div>
+</div>
+<div>
+    <h1 id="title">Projects</h1>
+</div>
+<div id="locator">
+    <div id="search">
+        <input id="bar" type="text" placeholder="Search...">
+        <button>Submit</button>
+    </div>
+    <div id="filter">Filter</div>
+</div>
+<div id="projects">
+    <div class="project">
+        <img class="image" src="images/fancyBear.jpg">
+        <div class="top">
+        <h2 class="title">Title</h2>
+        <i style='font-size:24px' class='fas'>&#xf46c;</i>
+        <i style='font-size:24px' class='fa'>&#xf2b9;</i>
+        </div>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Ut tincidunt porttitor neque, at congue quam mollis dignissim. 
+            Nunc dignissim, risus imperdiet aliquet accumsan, dui lorem aliquam massa,
+            ac mollis quam magna ut quam. Vestibulum vitae sagittis est.
+            Quisque pharetra lobortis sapien vel condimentum. Cras sit amet eros ipsum.
+            Vestibulum eleifend purus vitae ultrices sagittis.
+            Pellentesque dignissim commodo sem, in lobortis diam ullamcorper non.
+            Morbi pellentesque, tellus quis sodales lobortis, leo velit posuere eros,
+            eget vestibulum massa nulla vitae purus. Praesent tristique dictum lacinia.
+            Pellentesque aliquet dapibus ligula, id interdum urna varius ut. Donec dolor mauris, 
+            ultricies et bibendum vel, tincidunt a ex. Cras mattis aliquam augue,
+            id convallis est vulputate et. In porta massa sed euismod pharetra.
+        </p>
+        <p>Date</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+    <div id="siteMap">
+    <h3 id="siteMapH">Site Map</h3>
+    <a class="footE" id="navf1" href="index.html">Home</a>
+    <a class="footE" id="navf2" href="projects.html">Projects</a>
+    <a class="footE" id="navf3" href="cv.html">CV</a>
+    </div>
+    <div id="social">
+        <h3 id="socialH">Contact Me</h3>
+        <a class="footE" id="social1" href="">+4915168134259</a>
+        <a class="footE" id="social2" href="">Discord</a>
+        <a class="footE" id="social3" href="">Other</a>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>

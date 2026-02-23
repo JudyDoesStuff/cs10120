@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<body >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .site{
+        display: grid;
+
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: #ABA5FF;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+
+    }
+    .item-2{
+        display: flex;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        gap: 20px;
+        justify-self: center;
+        font-size: min(3vw, 120%);
+        font-family: 'Abril Fatface', serif;
+    }
+    .nav{
+        color: #3C4693ff;
+        text-decoration: none;
+    }
+    .nav:hover{
+        background-color: #3C4693ff;
+        color: #ABA5FF;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        border-radius: 10px;
+
+
+
+    }
+    .item-1{
+        visibility: collapse;
+        font-size: min(4vw, 150%);
+        font-family: 'Abril Fatface', serif;
+        color:#28497Aff;
+
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 100%;
+        background-image: url("images/background.png");
+        background-size: cover;
+        border-radius: 25px;
+
+    }
+    .name{
+        grid-column-start: 1;
+        justify-self: center;
+        align-self: end;
+        font-size: clamp(2.5rem, 5vw, 5vw);
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 5vw;
+        padding-left: 3vw;
+        font-family: 'Abril Fatface', serif; 
+        color: #28497Aff;
+
+
+
+    }
+    .description{
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: center;
+        padding-bottom: 10vw;
+        padding-left: 3vw;
+        text-align: center;
+        font-family: Poppins, sans-serif;
+        color:  #0C162Aff;
+        
+    }
+    .portrait{
+        height: 300px;
+        width:auto;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+      
+    }
+    #me{
+        display: grid;
+        justify-self: center;
+        font-family: 'Abril Fatface', serif;
+        padding-top: 4vw;
+        color:#28497Aff;
+
+    }
+    #about{
+        display: grid;
+        justify-self: center;
+        text-align: center;
+        font-family: Poppins, sans-serif;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        color: #0C162Aff;
+
+    }
+    #list{
+        display: grid;
+        justify-self: center;
+        font-family: 'Abril Fatface', serif;
+        padding-top: 4vw;
+        color: #28497Aff;
+
+    }
+    .scrolling-wrapper {
+        display: flex;
+        gap: 10vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        .card {
+            display: inline-block;
+        }
+    }
+
+    .card{
+        display: flex;
+        padding: 30px;
+        border-radius: 25px;
+        width: 350px;
+        min-width: 350px;
+        max-width: 350px;
+        background-color: #A4BBFFff;
+    }
+    .cover{
+        display: flex;
+        width: 200px;
+        height: auto;   
+        justify-self: center; 
+    }
+    .bookDesc{
+        display: flex;
+        justify-self: center;
+        font-family: Poppins, sans-serif;
+        background-color:#578EE5ff;
+        color: #A4BBFFff;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+
+    }
+    .bookTitle{
+        display: flex;
+        justify-self: center;
+        font-family: 'Abril Fatface', serif;
+        color: #3C4693ff;
+    }
+    .author{
+        display: flex;
+        justify-self: center;
+        font-family: Poppins, sans-serif;
+        color:#7475D7ff;
+        
+    }
+    .bookDesc:hover{
+        background-color:#3C4693ff;
+        color:#7475D7ff;
+
+        
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color:#ABA5FF;
+        border-radius: 25px;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+    #siteMap{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 1;
+        padding: 3vw;
+        font-size: 2vw;
+        color: #3C4693ff;
+
+    }
+    #social{
+        grid-column-start: 2;
+    }
+    #navf1{
+        grid-row-start: 2;
+        padding:1vw
+    }
+    #navf2{
+        grid-row-start: 3;
+        padding:1vw
+    }
+    #navf3{
+        grid-row-start: 4;
+        padding:1vw
+    }
+    #social{
+        display:grid;
+        font-size: 2vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 2;
+        padding: 3vw;
+        color: #3C4693ff;
+
+    }
+    #social1{
+        grid-row-start: 2;
+        padding:1vw;
+    }
+    #social2{
+        grid-row-start: 3;
+        padding:1vw;
+    }
+    #social3{
+        grid-row-start: 4;
+        padding:1vw;
+    }
+    .footE{
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: #3C4693ff;
+    }
+    .footE:hover{
+        color: #0C162Aff;
+    }
+
+    
+    @media only screen and (max-width: 700px) {
+        .scrolling-wrapper {
+            &::-webkit-scrollbar {
+             display: none;
+            }
+        }       
+
+    }
+
+    @media only screen and (min-width: 700px) {
+
+    .site{
+        margin:5vw;
+
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: 50% 50%;
+        
+    }
+    .item-1{
+        visibility: visible;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .hero{
+        grid-template-columns: 50% 50%;
+
+    }
+    .name{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+        align-self: start;
+        font-size: clamp(2rem, 5vw, 5vw);
+    }
+    .description{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: top;
+        padding-bottom: 0vw;
+    }
+    .portrait{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: center;
+        padding-top: none;
+    }
+    #me{
+        display: grid;
+        justify-self: left;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    #about{
+        display: grid;
+        justify-self: left;
+        text-align: left;
+    }
+    #list{
+        display: grid;
+        justify-self: left;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+    }
+
+
+</style>
+
+<div class="site">
+<div class="container">
+    <div class="item item-1">Judy Helena Maisel</div>
+    <div class="item item-2">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="projects.html">Projects</a>
+        <a class="nav" href="cv.html">CV</a>
+        <a class="nav" href="#footer">Contact</a>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="name">Judy Helena Maisel</div>
+    <div class="description">I am an aspiring computer scientist with a passion for design, fun and creativity.</div>
+    <img class="portrait" src="images/portrait.png">
+</div>
+
+<div class="aboutMe">
+    <h1 id="me">About me</h1>
+    <p id="about">
+        I'm Judith Maisel, or 'Judy' for short. My calling in life has alway been to try 
+        my best to create something meaningful for me and for others. Whether it's through 
+        sewing a piece of clothing for a friend, knitting a christmas present,
+        or creating a silly video game, if I made you smile, my job is done. 
+    </p>
+</div>
+
+<h1 id="list">Reading List</h1>
+
+<div class="scrolling-wrapper">
+  <div class="card"> 
+    <img class="cover" src="images/martian.jpg">
+    <h2 class="bookTitle">The Martian</h2>
+    <p class="author">Andy Weir</p>
+    <a class="bookDesc" href="https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)">Summary</a>
+</div>
+  <div class="card">
+    <img class="cover" src="images/hailMary.jpg">
+    <h2 class="bookTitle">Project Hail Mary</h2>
+    <p class="author">Andy Weir</p>
+    <a class="bookDesc" href="https://en.wikipedia.org/wiki/Project_Hail_Mary">Summary</a>
+</div>
+  <div class="card">
+    <img class="cover" src="images/Percy.jpg">
+    <h2 class="bookTitle">Percy Jackson</h2>
+    <p class="author">Rick Riordan</p>
+    <a class="bookDesc" href="https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians">Summary</a>
+</div>
+  <div class="card">
+    <img class="cover" src="images/fancyBear.jpg">
+    <h2 class="bookTitle">Fancy Bear Goes Phishing</h2>
+    <p class="author">Scott J. Shapiro</p>
+    <a class="bookDesc" href="https://en.wikipedia.org/wiki/Fancy_Bear_Goes_Phishing">Summary</a>
+</div>
+  <div class="card">
+    <img class="cover" src="images/trust.jpg">
+    <h2 class="bookTitle">The Seven Rules Of Trust</h2>
+    <p class="author">Jimmy Wales</p>
+    <a class="bookDesc" href="https://en.wikipedia.org/wiki/The_Seven_Rules_of_Trust">Summary</a>
+</div>
+  
+</div>
+<div id="footer">
+    <div id="siteMap">
+    <h3 id="siteMapH">Site Map</h3>
+    <a class="footE" id="navf1" href="index.html">Home</a>
+    <a class="footE" id="navf2" href="projects.html">Projects</a>
+    <a class="footE" id="navf3" href="cv.html">CV</a>
+    </div>
+    <div id="social">
+        <h3 id="socialH">Contact Me</h3>
+        <a class="footE" id="social1" href="">+4915168134259</a>
+        <a class="footE" id="social2" href="">Discord</a>
+        <a class="footE" id="social3" href="">Other</a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
