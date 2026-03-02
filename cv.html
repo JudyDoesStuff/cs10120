@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<body >
+<link rel="stylesheet" href="headerAndFooter.css">
+<link rel="stylesheet" href="cv.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<div class="site">
+<div class="container">
+    <div class="item item-1">Judy Helena Maisel</div>
+    <div class="item item-2">
+        <a class="nav" href="">Video</a>
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="projects.html">Projects</a>
+        <a class="nav" href="cv.html">CV</a>
+        <a class="nav" href="#footer">Contact</a>
+    </div>
+</div>
+
+
+<div>
+    <h1 id="title">Judy Helena Maisel</h1>
+</div>
+<div id="cv">
+
+<div id="side">
+<div id="contact">
+    <h3>Contact</h3>
+    <p>E-mail</p>
+    <p>maisel.j.h@gmail.com</p>
+    <p>Phone</p>
+    <p>+4915168134259</p>
+</div>
+
+
+<div id="contact">
+    <h3>Languages</h3>
+    <p>German - Native Speaker</p>
+    <p>English - C2</p>
+    <p>Spanish - A2</p>
+</div>
+</div>
+
+<div id="main">
+ <h2 class="title2">Education</h2>
+ <hr>
+ <h3 class="title3">School</h3>
+
+ <table>
+    <tr>
+        <td class="date">2018-22</td>
+        <td class="name">Johann-Steingruber-Schule Ansbach</td>
+    </tr>
+    <tr>
+        <td class="date">2022-24</td>
+        <td class="name">Laurentius FOS Neuendettelsau</td>
+    </tr>
+    <tr>
+        <td class="date">2024-25</td>
+        <td class="name">Lothar-von-Faber-Schule Nuermberg</td>
+    </tr>
+</table>
+<hr>
+<h3 class="title3">University</h3>
+<table>
+    <tr>
+        <td class="date">2025-26</td>
+        <td class="name">Aberystwyth University - Computer Science</td>
+    </tr>
+</table>
+<hr>
+<div>
+    <h2 class="title2">Personal Projects</h2>
+    <ul class="name">
+        <li>A personal Website using HTML CSS and JavaScript.</li>
+        <li>A connect 4 game programmed in Java.</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <h2 class="title2">Skills</h2>
+        <ul class="name">
+        <li>I am open and ready to learn and am always happy to try something new.</li>
+        <li>I'm a creative person and am always trying to think outside the box.</li>
+        <li>I have a basic understandign of HTML, CSS and JavaScript.</li>
+        <li>I have a basic understanding of C and Java.</li>
+    </ul>
+</div>
+</div>
+</div>
+<div id="footer">
+    <div id="siteMap">
+    <h3 id="siteMapH">Site Map</h3>
+    <a class="footE" id="navf0" href="">Video</a>
+    <a class="footE" id="navf1" href="index.html">Home</a>
+    <a class="footE" id="navf2" href="projects.html">Projects</a>
+    <a class="footE" id="navf3" href="cv.html">CV</a>
+    </div>
+    <div id="social">
+        <h3 id="socialH">Contact Me</h3>
+        <a class="footE" id="social1" href="">+4915168134259</a>
+        <a class="footE" id="social2" href="https://discord.com/users/532309484123586560">Discord</a>
+    </div>
+    <div id="mailBox">
+        <p id="emailMe">Email Me</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6bf650ae-7a45-4051-a313-390626b98064">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+            <label>E-mail Address</label>
+            <input type="email" id="email" name="email" placeholder="Your e-mail..." required>
+            <label>Contents</label>
+            <textarea type="text" id="contents" name="message" placeholder="Contents..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="declaration">
+ <h3>Declaration of authenticity</h3>
+        <p>
+          I, Judith Maisel hereby confirm that this site is entriely my own work done without the use of 
+          generative AI or other similar such unautherized aids. 
+          The exception to this is some of the code for the book slide show, where I took inspiration from <a href="https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6">here</a>,
+          and the functionality associated with the email from from <a href="https://www.youtube.com/watch?v=-HeadgoqJ7A">GreatStack</a> on YouTube and the <a href="https://web3forms.com/platforms/html-contact-form">web3forms</a> website.
+                      <p>
+          This Document was last modified on:
+        </p>
+          <p id="date"></p>.
+
+        </p>
+        <script>
+                let date = new Date(document.lastModified);
+                document.getElementById("date").innerHTML = date;
+        </script>
+        </p>
+    </div>
+    
+</div>
+</div>

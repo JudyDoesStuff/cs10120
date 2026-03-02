@@ -1,0 +1,244 @@
+    *{
+        box-sizing: border-box;
+    }
+    .site{
+        display: grid;
+
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: #ABA5FF;
+        padding: min(5em, 2%);
+        border-radius: 25px;
+        margin-bottom: 2vw;
+
+    }
+    .item-2{
+        display: flex;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        gap: 20px;
+        justify-self: center;
+        font-size: min(3vw, 120%);
+        font-family: 'Abril Fatface', serif;
+    }
+    .nav{
+        color: #3C4693ff;
+        text-decoration: none;
+    }
+    .nav:hover{
+        background-color: #3C4693ff;
+        color: #ABA5FF;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        border-radius: 10px;
+
+
+
+    }
+    .item-1{
+        visibility: collapse;
+        font-size: min(4vw, 150%);
+        font-family: 'Abril Fatface', serif;
+        color:#28497Aff;
+
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color:#ABA5FF;
+        border-radius: 25px;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+    #siteMap{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 1;
+        padding: 3vw;
+        font-size: max(2vw, 15px);
+        color: #3C4693ff;
+        font-family: Poppins, sans-serif;
+
+    }
+    #social{
+        display: grid;
+        grid-column-start: 2;
+    }
+    #navf0{
+        grid-row-start: 2;
+        padding:1vw
+    }
+    #navf1{
+        grid-row-start: 3;
+        padding:1vw
+    }
+    #navf2{
+        grid-row-start: 4;
+        padding:1vw
+    }
+    #navf3{
+        grid-row-start: 5;
+        padding:1vw
+    }
+    #social{
+        display:grid;
+        font-size: max(2vw, 15px);
+        grid-template-columns: 100%;
+        grid-template-rows: 4;
+        grid-column-start: 2;
+        padding: 3vw;
+        color: #3C4693ff;
+        font-family: Poppins, sans-serif;
+
+    }
+    #social1{
+        grid-row-start: 2;
+        padding:1vw;
+    }
+    #social2{
+        grid-row-start: 3;
+        padding:1vw;
+    }
+    .footE{
+        font-size: max(1.5vw, 15px);
+        text-decoration: none;
+        color: #3C4693ff;
+    }
+    .footE:hover{
+        color: #0C162Aff;
+    }
+    #mailBox{
+        display: grid;
+        padding: 3vw;
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: #A4BBFFff;
+        border-radius: 25px;
+        margin: 3vw;
+    }
+    #emailMe{
+        display: grid;
+        font-size: max(2.5vw, 15px);
+        color: #3C4693ff;
+        font-family: Poppins, sans-serif;
+
+    }
+    input[type=text]{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 25px;
+    }
+    textarea{
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 25px;
+        grid-row-start: 8;
+        width: 100%;
+        font-family: sans-serif;
+
+    }
+    input[type=email]{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 25px;
+    }
+    label{
+        font-family: Poppins, sans-serif;
+        font-size: max(1.5vw, 15px);
+
+    }
+    button[type=submit] {
+        display:grid;
+        justify-self: center;
+        margin-top: 1vw;
+        font-family: Poppins, sans-serif;
+        font-size: max(1.5vw, 15px);
+        border: none;
+        border-radius: 25px;
+        padding: 1vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        background-color: #578EE5ff;
+        color: #A4BBFFff;
+    }
+    button[type=submit]:hover{
+        background-color:#3C4693ff;
+        color:#7475D7ff;
+    }
+    input[type=submit]::placeholder{
+        text-align: right;
+    }
+    input[type=email],
+    textarea,
+    input[type=text]:focus{
+        outline: none;
+    }
+    #contents{
+        height: 200px;
+        text-wrap: wrap;
+    }
+    #declaration{
+        font-size: max(1.5vw, 15px);
+        padding:3vw;
+        padding-top: 0vw;
+        color:  #3C4693ff;
+        font-family: Poppins, sans-serif;
+    }
+
+    @media only screen and (max-width: 700px) {
+        #declaration{
+            grid-row-start: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    @media only screen and (min-width: 700px) {
+        .site{
+        margin:5vw;
+
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: 40% 60%;
+        
+    }
+    .item-1{
+        visibility: visible;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+    }
+    #mailBox{
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    #declaration{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    }

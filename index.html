@@ -1,332 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body >
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="headerAndFooter.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-    *{
-        box-sizing: border-box;
-    }
-    .site{
-        display: grid;
-
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 100%;
-        background-color: #ABA5FF;
-        padding: min(5em, 2%);
-        border-radius: 25px;
-        margin-bottom: 2vw;
-
-    }
-    .item-2{
-        display: flex;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        gap: 20px;
-        justify-self: center;
-        font-size: min(3vw, 120%);
-        font-family: 'Abril Fatface', serif;
-    }
-    .nav{
-        color: #3C4693ff;
-        text-decoration: none;
-    }
-    .nav:hover{
-        background-color: #3C4693ff;
-        color: #ABA5FF;
-        padding-right: 1vw;
-        padding-left: 1vw;
-        border-radius: 10px;
-
-
-
-    }
-    .item-1{
-        visibility: collapse;
-        font-size: min(4vw, 150%);
-        font-family: 'Abril Fatface', serif;
-        color:#28497Aff;
-
-    }
-    .hero{
-        display: grid;
-        grid-template-columns: 100%;
-        background-image: url("images/background.png");
-        background-size: cover;
-        border-radius: 25px;
-
-    }
-    .name{
-        grid-column-start: 1;
-        justify-self: center;
-        align-self: end;
-        font-size: clamp(2.5rem, 5vw, 5vw);
-        white-space: nowrap;
-        overflow: hidden;
-        padding-top: 5vw;
-        padding-left: 3vw;
-        font-family: 'Abril Fatface', serif; 
-        color: #28497Aff;
-
-
-
-    }
-    .description{
-        grid-row-start: 2;
-        justify-self: center;
-        align-self: center;
-        padding-bottom: 10vw;
-        padding-left: 3vw;
-        text-align: center;
-        font-family: Poppins, sans-serif;
-        color:  #0C162Aff;
-        
-    }
-    .portrait{
-        height: 300px;
-        width:auto;
-        grid-column-start: 1;
-        grid-row-start: 3;
-        justify-self: center;
-      
-    }
-    #me{
-        display: grid;
-        justify-self: center;
-        font-family: 'Abril Fatface', serif;
-        padding-top: 4vw;
-        color:#28497Aff;
-
-    }
-    #about{
-        display: grid;
-        justify-self: center;
-        text-align: center;
-        font-family: Poppins, sans-serif;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        color: #0C162Aff;
-
-    }
-    #list{
-        display: grid;
-        justify-self: center;
-        font-family: 'Abril Fatface', serif;
-        padding-top: 4vw;
-        color: #28497Aff;
-
-    }
-    .scrolling-wrapper {
-        display: flex;
-        gap: 10vw;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        .card {
-            display: inline-block;
-        }
-    }
-
-    .card{
-        display: flex;
-        padding: 30px;
-        border-radius: 25px;
-        width: 350px;
-        min-width: 350px;
-        max-width: 350px;
-        background-color: #A4BBFFff;
-    }
-    .cover{
-        display: flex;
-        width: 200px;
-        height: auto;   
-        justify-self: center; 
-    }
-    .bookDesc{
-        display: flex;
-        justify-self: center;
-        font-family: Poppins, sans-serif;
-        background-color:#578EE5ff;
-        color: #A4BBFFff;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 5px;
-        font-weight: bold;
-
-    }
-    .bookTitle{
-        display: flex;
-        justify-self: center;
-        font-family: 'Abril Fatface', serif;
-        color: #3C4693ff;
-    }
-    .author{
-        display: flex;
-        justify-self: center;
-        font-family: Poppins, sans-serif;
-        color:#7475D7ff;
-        
-    }
-    .bookDesc:hover{
-        background-color:#3C4693ff;
-        color:#7475D7ff;
-
-        
-    }
-    #footer{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        background-color:#ABA5FF;
-        border-radius: 25px;
-        margin-top: 3vw;
-        margin-bottom: 2vw;
-    }
-    #siteMap{
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 4;
-        grid-column-start: 1;
-        padding: 3vw;
-        font-size: max(2vw, 15px);
-        color: #3C4693ff;
-
-    }
-    #social{
-        display: grid;
-        grid-column-start: 2;
-    }
-    #navf1{
-        grid-row-start: 2;
-        padding:1vw
-    }
-    #navf2{
-        grid-row-start: 3;
-        padding:1vw
-    }
-    #navf3{
-        grid-row-start: 4;
-        padding:1vw
-    }
-    #social{
-        display:grid;
-        font-size: max(2vw, 15px);
-        grid-template-columns: 100%;
-        grid-template-rows: 4;
-        grid-column-start: 2;
-        padding: 3vw;
-        color: #3C4693ff;
-
-    }
-    #social1{
-        grid-row-start: 2;
-        padding:1vw;
-    }
-    #social2{
-        grid-row-start: 3;
-        padding:1vw;
-    }
-    #social3{
-        grid-row-start: 4;
-        padding:1vw;
-    }
-    .footE{
-        font-size: max(1.5vw, 15px);
-        text-decoration: none;
-        color: #3C4693ff;
-    }
-    .footE:hover{
-        color: #0C162Aff;
-    }
-
-    
-    @media only screen and (max-width: 700px) {
-        .scrolling-wrapper {
-            &::-webkit-scrollbar {
-             display: none;
-            }
-        }       
-
-    }
-
-    @media only screen and (min-width: 700px) {
-
-    .site{
-        margin:5vw;
-
-    }
-
-    .container {
-        display: grid; 
-        grid-template-columns: 50% 50%;
-        
-    }
-    .item-1{
-        visibility: visible;
-    }
-    .item-2{
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
-    .hero{
-        grid-template-columns: 50% 50%;
-
-    }
-    .name{
-        grid-column-start: 1;
-        grid-row-start: 1;
-        justify-self: center;
-        align-self: start;
-        font-size: clamp(2rem, 5vw, 5vw);
-    }
-    .description{
-        grid-column-start: 1;
-        grid-row-start: 2;
-        justify-self: center;
-        align-self: top;
-        padding-bottom: 0vw;
-    }
-    .portrait{
-        grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        justify-self: center;
-        padding-top: none;
-    }
-    #me{
-        display: grid;
-        justify-self: left;
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-    #about{
-        display: grid;
-        justify-self: left;
-        text-align: left;
-    }
-    #list{
-        display: grid;
-        justify-self: left;
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-    #footer{
-        display: grid;
-        grid-template-columns: 25% 25% 50%;
-    }
-}
-
-
-</style>
 
 <div class="site">
 <div class="container">
     <div class="item item-1">Judy Helena Maisel</div>
     <div class="item item-2">
+        <a class="nav" href="">Video</a>
         <a class="nav" href="index.html">Home</a>
         <a class="nav" href="projects.html">Projects</a>
         <a class="nav" href="cv.html">CV</a>
@@ -349,6 +33,29 @@
         or creating a silly video game, if I made you smile, my job is done. 
     </p>
 </div>
+
+<div id="nameInput">
+        <label id="who">...and who are you?</label>
+        <input type="text" id="goodMorning" name="goodMorning" placeholder="Your name...">
+        <button onclick="sayHello()" id="submit">Submit</button>
+        <d id="hello"></d>
+</div>
+<script>
+    function sayHello(){
+    let name = document.getElementById("goodMorning").value;
+    let date = new Date();
+    time = date.getHours();
+    if (time >= 0 && time < 12){
+        document.getElementById("hello").innerHTML = "Good morning " + name + "!" ;
+
+    }else if(time > 11 && time < 20){
+        document.getElementById("hello").innerHTML = "Good afternoon " + name + "!" ;
+
+    }else{
+        document.getElementById("hello").innerHTML = "Good evening " + name + "!" ;
+    }
+}
+</script>
 
 <h1 id="list">Reading List</h1>
 
@@ -388,6 +95,7 @@
 <div id="footer">
     <div id="siteMap">
     <h3 id="siteMapH">Site Map</h3>
+    <a class="footE" id="navf0" href="">Video</a>
     <a class="footE" id="navf1" href="index.html">Home</a>
     <a class="footE" id="navf2" href="projects.html">Projects</a>
     <a class="footE" id="navf3" href="cv.html">CV</a>
@@ -395,11 +103,47 @@
     <div id="social">
         <h3 id="socialH">Contact Me</h3>
         <a class="footE" id="social1" href="">+4915168134259</a>
-        <a class="footE" id="social2" href="">Discord</a>
-        <a class="footE" id="social3" href="">Other</a>
+        <a class="footE" id="social2" href="https://discord.com/users/532309484123586560">Discord</a>
+    </div>
+    <div id="mailBox">
+        <p id="emailMe">Email Me</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6bf650ae-7a45-4051-a313-390626b98064">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+            <label>E-mail Address</label>
+            <input type="email" id="email" name="email" placeholder="Your e-mail..." required>
+            <label>Contents</label>
+            <textarea type="text" id="contents" name="message" placeholder="Contents..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="declaration">
+        <h3>Declaration of authenticity</h3>
+        <p>
+          I, Judith Maisel hereby confirm that this site is entriely my own work done without the use of 
+          generative AI or other similar such unautherized aids. 
+          The exception to this is some of the code for the book slide show, where I took inspiration from <a href="https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6">here</a>,
+          and the functionality associated with the email from<a href="https://www.youtube.com/watch?v=-HeadgoqJ7A">GreatStack</a> on YouTube and the <a href="https://web3forms.com/platforms/html-contact-form">web3forms</a> website.
+          <p>
+          This Document was last modified on:
+          </p>
+          <p id="date"></p>.
+
+        <script>
+                let date = new Date(document.lastModified);
+                document.getElementById("date").innerHTML = date;
+        </script>
     </div>
     
 </div>
+          <p id="bottom">The information provided on this and other pages by me, Judith Maisel
+            (jum41@aber.ac.uk), is under my own personal responsibility and not that
+            of Aberystwyth University. Similarly, any opinions expressed are my own
+            and are in no way to be taken as those of A.U. The use of the
+            University's logo or crest is not allowed on individual user's web pages.</p>
+        </p>
 </div>
 </body>
-</html>
+</html> 

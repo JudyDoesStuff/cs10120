@@ -1,0 +1,83 @@
+    *{
+        box-sizing: border-box;
+    }
+    .site{
+        display: grid;
+
+    }
+    #title{
+        font-family: 'Abril Fatface', serif; 
+        color: #28497Aff;
+        font-size: clamp(2.5rem, 5vw, 5vw);
+        background-color: #ABA5FFff;
+        padding: 2vw;
+        border-radius: 25px 25px 0 0;
+        margin-bottom: 0px;
+    }
+    #cv{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    #contact{
+        padding-top: 2vw;
+        grid-column-start: 1;
+        padding-left: 2vw;
+        font-family: Poppins, sans-serif;
+
+    }
+    #main{
+        padding-left: 3vw;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    #side{
+        background-color: #ABA5FFff;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    hr{
+        border-top: 3px solid;
+        color: #7475D7ff;
+    }
+    .title2{
+        font-family: 'Abril Fatface', serif; 
+        color: #28497Aff;
+    }
+    .title3{
+        font-family: 'Abril Fatface', serif; 
+        color: #28497Aff;
+    }
+    .date{
+        font-family: 'Abril Fatface', serif; 
+        color: #A4BBFFff;
+        font-size: clamp(2rem, 4vw, 4vw);
+    }
+    .name{
+        color: #28497Aff;
+        font-family: Poppins, sans-serif;
+
+    }
+
+    @media only screen and (max-width: 700px) {
+
+        #cv{
+            display: grid;
+            grid-template-columns: 100%;
+
+        }
+        #main{
+            grid-column-start: 1;
+            grid-row-start: 5;
+        }
+        #side{
+            grid-column-start: 1;
+            grid-row-end: 3;
+            border-radius: 0 0 25px 25px;
+            padding-bottom: 1vw;
+            padding-left: 2vw;
+        }
+
+    }       
+
+    
